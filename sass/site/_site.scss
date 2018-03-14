@@ -1,0 +1,79 @@
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "primary/comments";
+
+@media screen and (min-width: 700px) {
+	@supports (display: flex) {
+
+		.success-content ol,
+		.community-content ol {
+			display: flex;
+			justify-content: space-around;
+			list-style: none;
+			margin: auto;
+		}
+
+		.success-content li,
+		.community-content li {
+			width: 50%;
+			text-align: center;
+		}
+
+	}
+}
+
+	.site {
+		max-width: 100em;
+		margin: auto;
+	}	
+	.site-main {
+		margin: auto;
+	}
+		
+	section button,
+	section a {
+		margin: 1em auto;
+		text-align: center;
+		padding: 1em;
+		display: block;
+		width: 200px;
+		text-transform: uppercase;
+		text-decoration: none;
+		border: 2px solid;
+		background: transparent;
+		color: rgba(0, 0, 0, .8);
+		@include font-size(0.9);
+		line-height: 1;
+	}
+img.custom-logo {
+	max-width: 10%;
+	min-width: 6em;
+	position: absolute;
+	top: 0;
+	z-index: 9;
+}
+
+@media screen and (max-width: 600px) {
+	img.dunno {
+		display: none;
+	}
+}
+
+.dunno {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.toilet {
+	padding-top: 8%;
+	margin: 1em auto;
+}
+

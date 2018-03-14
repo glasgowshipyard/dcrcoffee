@@ -1,0 +1,27 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	text-transform: uppercase;
+	border: 2px solid;
+	background: transparent;
+	color: rgba(0, 0, 0, .8);
+	@include font-size(0.9);
+	line-height: 1;
+	//padding: .6em 1em .4em;
+	//margin: 1em auto;
+	text-align: center;
+	padding: 1em;
+	display: block;
+	width: 200px;
+
+
+	&:hover {
+		//border-color: $color__border-button-hover;
+	}
+
+	&:active,
+	&:focus {
+		//border-color: $color__border-button-focus;
+	}
+}

@@ -1,0 +1,47 @@
+/*--------------------------------------------------------------
+# CSS Grid for not useless browsers
+--------------------------------------------------------------*/	
+@media screen and (min-width: 800px) {
+
+/*@supports (grid-area: auto) {
+		
+	.site-main > *,
+	.site-footer {
+		display: grid;
+		grid-template-columns: 1fr repeat(2, minmax(auto, 32em)) 1fr;
+	}
+	
+	.partner-content,
+	.success-content,
+	.get-coffee-content,
+	.community-content,
+	.pitfalls-content {
+		grid-column: 2/4;
+	}
+	
+	h1.section-title {
+		grid-column: 4 span;
+	}
+	
+	.wholesale {
+		grid-column: 1/2;
+	}
+	
+	.retail {
+		grid-column: 2/3;
+	}
+	
+	.get-coffee-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	.community-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	
+	.trip {
+		grid-row: 2/3;
+	}//this is the end of the @supports query (is it a query?)*/
+}
