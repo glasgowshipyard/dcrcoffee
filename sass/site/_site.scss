@@ -16,13 +16,31 @@
 			display: flex;
 			justify-content: space-around;
 			list-style: none;
-			margin: auto;
+			margin-left: -3em;
 		}
-
+		
 		.success-content li,
 		.community-content li {
 			width: 50%;
+		}
+		
+		li .svg-inline--fa {
+			padding-bottom: .1em;
+		}
+		
+		li.arrow {
+			align-self: center;
+		}
+		
+		.community-content li h2,
+		.success-content li {
 			text-align: center;
+		}
+		
+		.community-content li p,
+		.success-content li p {
+			min-height: 100px;
+			padding: 0 2.5em;
 		}
 
 	}
@@ -76,4 +94,8 @@ img.custom-logo {
 	padding-top: 8%;
 	margin: 1em auto;
 }
-
+.entry-header,
+.entry-content {
+	max-width: 64em;
+	margin: auto;
+}

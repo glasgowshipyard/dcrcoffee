@@ -44,7 +44,9 @@ foreach( $pages as $page ) {
 		<div class="<?php echo $page->post_name; ?>-content">
 			<h1 class="section-title"><?php echo $page->post_title; ?></a></h1>
 			<!-- <?php echo $content_parts['main']; ?> THIS DOESN'T WORK -->
-			<?php echo $content; ?> 
+			<?php  
+				echo get_the_post_thumbnail( $page->ID, 'full', array( 'class' => 'alignright' ) );
+				echo $content; ?>
 		</div>
 		</section>
 	<?php

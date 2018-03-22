@@ -1,10 +1,15 @@
 .pitfalls {
-	background: $orange;
-	color: #fff;	
+	background: $charcoal;
+	color: $white;
+}
+
+.pitfalls-content h1.section-title {
+	width: 50%
 }
 
 .community {
 	background: $light-grey;
+	clear: both;
 }
 
 section div {
@@ -13,8 +18,18 @@ section div {
 	padding: 1em 0;
 }
 
+.wholesale,
+.retail {
+	float: right;
+	width: 50%;
+}
+
 .distribute figure{
 	display: inline-block;
 	float: none;
 	margin: auto;
+}
+
+div.distribute-content {
+	text-align: center;
 }
